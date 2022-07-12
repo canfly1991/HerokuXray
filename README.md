@@ -27,11 +27,11 @@ vless 性能更加优秀，占用资源更少。
 如出现错误，可以多尝试几次，待部署完成后页面底部会显示`Your app was successfully deployed` 
   * 点击Manage App可在Settings下的Config Vars项**查看和重新设置参数**  
   * 点击Open app跳转[欢迎页面](/etc/CADDYIndexPage.md)域名即为heroku分配域名，格式为`xxx.herokuapp.com`，用于客户端  
-  * 默认协议密码为`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`，WS路径为$UUID-[vmess|vless|trojan|ss|socks]格式
+  * 默认协议密码为`8e200a54-0194-11ed-bd86-a38d8e80e7c8`，WS路径为$UUID-[vmess|vless|trojan|ss|socks]格式
 
 ### 客户端
 * **务必替换所有的`xxx.herokuapp.com`为heroku分配的项目域名**  
-* **务必替换所有的`24b4b1e1-7a89-45f6-858c-242cf53b5bdb`为部署时设置的UUID,建议更改,不要每个人都一样**  
+* **务必替换所有的`8e200a54-0194-11ed-bd86-a38d8e80e7c8`为部署时设置的UUID,建议更改,不要每个人都一样**  
 
 **XRay 将在部署时会自动实配安装`最新版本`。**
 
@@ -45,13 +45,13 @@ vless 性能更加优秀，占用资源更少。
 * 代理协议：vless 或 vmess
 * 地址：xxx.herokuapp.com
 * 端口：443
-* 默认UUID：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* 默认UUID：8e200a54-0194-11ed-bd86-a38d8e80e7c8
 * vmess额外id：0
 * 加密：none
 * 传输协议：ws
 * 伪装类型：none
 * 伪装域名：xxx.workers.dev(CF Workers反代地址)
-* 路径：/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vless // 默认vless使用(/自定义UUID码-vless)，vmess使用(/自定义UUID码-vmess)
+* 路径：/8e200a54-0194-11ed-bd86-a38d8e80e7c8-vless // 默认vless使用(/自定义UUID码-vless)，vmess使用(/自定义UUID码-vmess)
 * 底层传输安全：tls
 * 跳过证书验证：false
 ```
@@ -69,11 +69,11 @@ vless 性能更加优秀，占用资源更少。
     "remote_addr": "xxx.herokuapp.com",
     "remote_port": 443,
     "password": [
-        "24b4b1e1-7a89-45f6-858c-242cf53b5bdb"
+        "8e200a54-0194-11ed-bd86-a38d8e80e7c8"
     ],
     "websocket": {
         "enabled": true,
-        "path": "/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-trojan",
+        "path": "/8e200a54-0194-11ed-bd86-a38d8e80e7c8-trojan",
         "host": "xxx.herokuapp.com"
     }
 }
@@ -87,10 +87,10 @@ vless 性能更加优秀，占用资源更少。
 * 客户端下载：https://github.com/shadowsocks/shadowsocks-windows/releases/
 * 服务器地址: xxx.herokuapp.com
 * 端口: 443
-* 密码：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* 密码：8e200a54-0194-11ed-bd86-a38d8e80e7c8
 * 加密：chacha20-ietf-poly1305
 * 插件程序：xray-plugin_windows_amd64.exe  //需将插件https://github.com/shadowsocks/xray-plugin/releases下载解压后放至shadowsocks同目录
-* 插件选项: tls;host=xxx.herokuapp.com;path=/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-ss
+* 插件选项: tls;host=xxx.herokuapp.com;path=/8e200a54-0194-11ed-bd86-a38d8e80e7c8-ss
 ```
 </details>
 
